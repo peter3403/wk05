@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom"
 import { SET_PAGE_TITLE, SET_PAGE_CONTENT, SET_NAVBAR_ACTIVEITEM } from "../utils/constants"
 import { StoreContext } from "../store"
-import NavBar from "./NavBar";
+import NavBar from "./Navbar";
 import products from "../json/products.json";
 
 export default function Header({title}) {

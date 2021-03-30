@@ -16,7 +16,7 @@ const initialState = {
       products,
    },
    navBar: {
-      activeItem: "",
+      activeItem: "/",
    },
    cartItems: [],
 };

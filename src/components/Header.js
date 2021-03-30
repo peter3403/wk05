@@ -36,6 +36,7 @@ export default function Header({title}) {
                An example made by Create-React-App.
             </p>
          </div>
+         <CartSummary />
 
          <hr className="hr-header-line" />
          <NavBar />

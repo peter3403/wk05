@@ -4,6 +4,7 @@ import { SET_PAGE_TITLE, SET_PAGE_CONTENT, SET_NAVBAR_ACTIVEITEM } from "../util
 import { StoreContext } from "../store"
 import NavBar from "./NavBar";
 import products from "../json/products.json";
+import CartSummary from "./CartSummary";
 
 export default function Header({title}) {
    const { dispatch } = useContext(StoreContext);
@@ -23,23 +24,26 @@ export default function Header({title}) {
    };
 
    return (
-      <div className="header">
-         <div onClick={onClickHeader}>
-            <Link to="/">
-               <h1 className="header-title">
-                  {title}
-               </h1>
-            </Link>
+      <header className="header">
+         <div className="header-wrap">
+            <div className="header-text" onClick={onClickHeader}>
+               <Link to="/">
+                  <h1 className="header-title">
+                     {title}
+                  </h1>
+               </Link>
 
-            <p
-               className="header-slogan">
-               An example made by Create-React-App.
-            </p>
+               <p
+                  className="header-slogan">
+                  An example made by Create-React-App.
+               </p>
+               
+            </div>
+            <CartSummary/>
          </div>
-         <CartSummary />
-
-         <hr className="hr-header-line" />
-         <NavBar />
-      </div>
+            <hr className="hr-header-line" />
+            <NavBar />
+         
+      </header>
    );
 }

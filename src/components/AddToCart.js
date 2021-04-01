@@ -4,7 +4,7 @@ import { StoreContext } from "../store"
 import { ADD_CART_ITEM } from "../utils/constants"
 
 export default function AddToCart({ product, qty }) {
-  const { dispatch } = useContext(StoreContext);
+  
 
   const openNotification = () => {
     notification.open({

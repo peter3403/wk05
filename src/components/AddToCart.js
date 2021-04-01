@@ -35,7 +35,7 @@ export default function AddToCart({ product, qty }) {
 
 
   return (
-    <Button type="primary" className="btn-tocar" onClick={addToCart}>
+    <Button type="primary" className="btn-tocar" onClick={openNotification}>
       Add To Shopping Bag
     </Button>
   );
